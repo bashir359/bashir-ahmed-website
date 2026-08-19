@@ -24,11 +24,14 @@
         }
 
         nav {
-            background-color: rgba(255, 255, 255, 0.9);
+            background-color: rgba(255, 255, 255, 0.95);
             padding: 15px;
             margin-bottom: 30px;
             border-radius: 15px;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 10px;
+            z-index: 10;
         }
 
         nav a {
@@ -39,9 +42,13 @@
             color: #0077b6;
         }
 
+        nav a:hover {
+            color: #023e8a;
+        }
+
         .hero {
-            background-color: rgba(255, 255, 255, 0.92);
-            padding: 50px 25px;
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 55px 25px;
             margin: 20px auto;
             max-width: 800px;
             border-radius: 20px;
@@ -49,11 +56,11 @@
         }
 
         h1 {
-    font-size: 42px;
-    margin-bottom: 20px;
-    color: #023e8a;
-    letter-spacing: 1px;
-}
+            font-size: 42px;
+            margin-bottom: 20px;
+            color: #023e8a;
+            letter-spacing: 1px;
+        }
 
         h2 {
             margin-top: 35px;
@@ -76,31 +83,58 @@
             background-color: #0077b6;
             color: white;
             max-width: 100%;
+            transition: 0.3s;
         }
 
-        .skill {
-            background-color: rgba(255, 255, 255, 0.95);
-            margin: 15px auto;
-            padding: 15px;
-            width: 100%;
-            max-width: 400px;
-            border-radius: 15px;
-            font-size: 20px;
-            overflow-wrap: anywhere;
-            word-break: break-word;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
         }
 
         .about {
             background-color: rgba(255, 255, 255, 0.95);
             margin: 30px auto;
-            padding: 25px;
+            padding: 30px 25px;
             width: 100%;
-            max-width: 600px;
-            border-radius: 15px;
+            max-width: 650px;
+            border-radius: 18px;
             overflow-wrap: anywhere;
             word-break: break-word;
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .skill {
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 15px auto;
+            padding: 20px;
+            width: 100%;
+            max-width: 420px;
+            border-radius: 15px;
+            font-size: 20px;
+            overflow-wrap: anywhere;
+            word-break: break-word;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .skill:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+        }
+
+        .project {
+            background-color: rgba(255, 255, 255, 0.95);
+            margin: 20px auto;
+            padding: 25px;
+            width: 100%;
+            max-width: 650px;
+            border-radius: 18px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .project h3 {
+            color: #0077b6;
+            font-size: 22px;
         }
 
         .email {
@@ -109,9 +143,9 @@
         }
 
         footer {
-            margin-top: 40px;
-            padding: 20px;
-            background-color: rgba(255, 255, 255, 0.9);
+            margin-top: 45px;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.95);
             border-radius: 15px;
             overflow-wrap: anywhere;
         }
@@ -147,12 +181,13 @@
 
             .hero,
             .about,
-            .skill {
+            .skill,
+            .project {
                 width: 100%;
                 max-width: 100%;
                 margin-left: auto;
                 margin-right: auto;
-                padding: 20px 15px;
+                padding: 22px 15px;
             }
 
             .email {
@@ -230,19 +265,19 @@
 
         <h2>My Projects</h2>
 
-        <div class="skill">
-            🌐 My Personal Website
+        <div class="project">
+            <h3>🌐 My Personal Website</h3>
             <p>My first web development project.</p>
         </div>
 
-        <div class="skill">
-            🤖 AI Learning
+        <div class="project">
+            <h3>🤖 AI Learning</h3>
             <p>Learning how to use AI tools for online work.</p>
         </div>
 
-        <div class="skill">
-            🛒 Online Business
-            <p>My future goal is to build an online business.</p>
+        <div class="project">
+            <h3>🛒 Online Business</h3>
+            <p>My future goal is to build my own online business.</p>
         </div>
 
     </div>
